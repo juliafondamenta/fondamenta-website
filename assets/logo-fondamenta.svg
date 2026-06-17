@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b8976a"/>
+      <stop offset="50%" style="stop-color:#d4b896"/>
+      <stop offset="100%" style="stop-color:#b8976a"/>
+    </linearGradient>
+    <linearGradient id="goldVert" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4b896"/>
+      <stop offset="100%" style="stop-color:#b8976a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="200" fill="#faf9f7"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- BIFORA EMBLEM (standalone mark, left side) -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(30, 20)">
+
+    <!-- Outer frame of bifora -->
+    <rect x="0" y="0" width="72" height="110" rx="3" ry="3"
+          fill="none" stroke="url(#goldGrad)" stroke-width="1.2"/>
+
+    <!-- Left arch -->
+    <path d="M 8 90 L 8 52 Q 8 30 22 30 Q 36 30 36 52 L 36 90"
+          fill="none" stroke="url(#goldVert)" stroke-width="1.4"/>
+
+    <!-- Right arch -->
+    <path d="M 36 90 L 36 52 Q 36 30 50 30 Q 64 30 64 52 L 64 90"
+          fill="none" stroke="url(#goldVert)" stroke-width="1.4"/>
+
+    <!-- Central column -->
+    <line x1="36" y1="30" x2="36" y2="90" stroke="#b8976a" stroke-width="1.2"/>
+
+    <!-- Oculus (circular window above the two arches) -->
+    <circle cx="36" cy="18" r="8" fill="none" stroke="url(#goldGrad)" stroke-width="1.2"/>
+    <!-- Inner oculus detail -->
+    <circle cx="36" cy="18" r="4" fill="none" stroke="#b8976a" stroke-width="0.6" opacity="0.5"/>
+    <!-- Oculus centre dot -->
+    <circle cx="36" cy="18" r="1.5" fill="#b8976a"/>
+
+    <!-- Trefoil details at arch crowns -->
+    <!-- Left arch trefoil -->
+    <circle cx="22" cy="30" r="3.5" fill="none" stroke="#b8976a" stroke-width="0.7" opacity="0.6"/>
+    <!-- Right arch trefoil -->
+    <circle cx="50" cy="30" r="3.5" fill="none" stroke="#b8976a" stroke-width="0.7" opacity="0.6"/>
+
+    <!-- Base line -->
+    <line x1="0" y1="90" x2="72" y2="90" stroke="url(#goldGrad)" stroke-width="1.2"/>
+
+    <!-- Small column base details -->
+    <rect x="32" y="88" width="8" height="5" rx="1" fill="#b8976a" opacity="0.3"/>
+
+    <!-- Step base -->
+    <rect x="0" y="95" width="72" height="5" rx="1"
+          fill="none" stroke="#b8976a" stroke-width="0.8" opacity="0.4"/>
+    <rect x="4" y="100" width="64" height="4" rx="1"
+          fill="none" stroke="#b8976a" stroke-width="0.6" opacity="0.25"/>
+
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- WORDMARK                                    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(122, 0)">
+
+    <!-- F -->
+    <text x="0" y="98"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="52" font-weight="300"
+          letter-spacing="0"
+          fill="#1a1a2e">F</text>
+
+    <!-- O -->
+    <text x="30" y="98"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="52" font-weight="300"
+          fill="#1a1a2e">O</text>
+
+    <!-- N -->
+    <text x="65" y="98"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="52" font-weight="300"
+          fill="#1a1a2e">N</text>
+
+    <!-- D -->
+    <text x="98" y="98"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="52" font-weight="300"
+          fill="#1a1a2e">D</text>
+
+    <!-- A — custom bifora shape -->
+    <g transform="translate(132, 50)">
+      <!-- Left leg -->
+      <line x1="0" y1="48" x2="15" y2="0" stroke="#1a1a2e" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- Right leg -->
+      <line x1="30" y1="48" x2="15" y2="0" stroke="#1a1a2e" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- Crossbar -->
+      <line x1="6" y1="28" x2="24" y2="28" stroke="#1a1a2e" stroke-width="1.6"/>
+      <!-- Bifora arch at crown — small rounded arch -->
+      <path d="M 7 10 Q 15 0 23 10" fill="none" stroke="#b8976a" stroke-width="1.2"/>
+      <!-- Oculus dot at apex -->
+      <circle cx="15" cy="2" r="2" fill="#b8976a"/>
+    </g>
+
+    <!-- M — custom bifora double arch -->
+    <g transform="translate(172, 50)">
+      <!-- Outer left leg -->
+      <line x1="0" y1="48" x2="0" y2="4" stroke="#1a1a2e" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- Left arch peak -->
+      <path d="M 0 4 Q 10 -4 20 4" fill="none" stroke="#1a1a2e" stroke-width="2.2"/>
+      <!-- Centre column going down -->
+      <line x1="20" y1="4" x2="20" y2="48" stroke="#1a1a2e" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- Right arch peak -->
+      <path d="M 20 4 Q 30 -4 40 4" fill="none" stroke="#1a1a2e" stroke-width="2.2"/>
+      <!-- Outer right leg -->
+      <line x1="40" y1="4" x2="40" y2="48" stroke="#1a1a2e" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- Left bifora arch accent -->
+      <path d="M 4 16 Q 10 8 16 16" fill="none" stroke="#b8976a" stroke-width="1"/>
+      <!-- Right bifora arch accent -->
+      <path d="M 24 16 Q 30 8 36 16" fill="none" stroke="#b8976a" stroke-width="1"/>
+      <!-- Left oculus -->
+      <circle cx="10" cy="3" r="2" fill="#b8976a"/>
+      <!-- Right oculus -->
+      <circle cx="30" cy="3" r="2" fill="#b8976a"/>
+    </g>
+
+    <!-- E -->
+    <text x="222" y="98"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="52" font-weight="300"
+          fill="#1a1a2e">E</text>
+
+    <!-- N -->
+    <text x="252" y="98"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="52" font-weight="300"
+          fill="#1a1a2e">N</text>
+
+    <!-- T -->
+    <text x="284" y="98"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="52" font-weight="300"
+          fill="#1a1a2e">T</text>
+
+    <!-- A (final) — custom bifora again -->
+    <g transform="translate(310, 50)">
+      <line x1="0" y1="48" x2="15" y2="0" stroke="#1a1a2e" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="30" y1="48" x2="15" y2="0" stroke="#1a1a2e" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="6" y1="28" x2="24" y2="28" stroke="#1a1a2e" stroke-width="1.6"/>
+      <path d="M 7 10 Q 15 0 23 10" fill="none" stroke="#b8976a" stroke-width="1.2"/>
+      <circle cx="15" cy="2" r="2" fill="#b8976a"/>
+    </g>
+
+    <!-- Gold rule -->
+    <line x1="0" y1="108" x2="348" y2="108" stroke="url(#goldGrad)" stroke-width="0.8"/>
+
+    <!-- CONSULTING -->
+    <text x="1" y="124"
+          font-family="Jost, sans-serif"
+          font-size="10" font-weight="300"
+          letter-spacing="8"
+          fill="#b8976a">CONSULTING</text>
+
+    <!-- Domain -->
+    <text x="1" y="142"
+          font-family="Jost, sans-serif"
+          font-size="8" font-weight="300"
+          letter-spacing="2.5"
+          fill="#b8976a" opacity="0.6">fondamenta.global</text>
+
+  </g>
+
+</svg>
