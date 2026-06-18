@@ -326,21 +326,43 @@ section {
   align-items: center;
 }
 
-.founder-emblem {
-  aspect-ratio: 1;
-  max-width: 280px;
+.founder-photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  width: min(100%, 320px);
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(184, 151, 106, 0.08);
+  overflow: hidden;
   border: 1px solid rgba(184, 151, 106, 0.2);
-  padding: 3rem;
+  background: rgba(184, 151, 106, 0.08);
 }
 
-.founder-emblem svg {
+.founder-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(2, 43, 41, 0.08) 0%, rgba(2, 43, 41, 0.5) 100%),
+    linear-gradient(135deg, rgba(184, 151, 106, 0.22) 0%, transparent 52%);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.founder-photo::after {
+  content: '';
+  position: absolute;
+  inset: 1rem;
+  z-index: 2;
+  border: 1px solid rgba(212, 184, 150, 0.38);
+  pointer-events: none;
+}
+
+.founder-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: saturate(0.82) contrast(0.96);
 }
 
 .founder-name {
@@ -574,8 +596,8 @@ section {
     grid-template-columns: 1fr;
   }
 
-  .founder-emblem {
-    max-width: 200px;
+  .founder-photo {
+    max-width: 260px;
   }
 }
 
