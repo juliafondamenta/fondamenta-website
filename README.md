@@ -15,9 +15,9 @@ Then visit [http://localhost:8080](http://localhost:8080).
 
 ## Contact form
 
-The contact form uses [FormSubmit](https://formsubmit.co) to deliver submissions to `julia@fondamenta.media`.
+The contact form uses [FormSubmit](https://formsubmit.co) to deliver submissions to `hello@fondamenta.media`.
 
-**First-time setup:** After the first test submission, FormSubmit will send a confirmation email to `julia@fondamenta.media`. Click the activation link to enable the form.
+**First-time setup:** After the first test submission, FormSubmit will send a confirmation email to `hello@fondamenta.media`. Click the activation link to enable the form.
 
 Submissions work on localhost and once deployed to fondamenta.media.
 

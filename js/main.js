@@ -52,7 +52,7 @@
         throw new Error(data.message || 'Submission failed');
       }
     } catch {
-      statusEl.textContent = 'Something went wrong. Please email us directly at julia@fondamenta.media';
+      statusEl.textContent = 'Something went wrong. Please email us directly at hello@fondamenta.media';
       statusEl.classList.add('form-status--error');
     } finally {
       submitBtn.disabled = false;
